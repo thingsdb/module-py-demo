@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "doc": "Demo module",
+    "main": "demo.py",
+    "defaults": {
+        "load": true,
+        "deep": 0
+    },
+    "exposes": {
+        "ping": {
+            "defaults": {
+                "message": "ping"
+            },
+            "argmap": []
+        },
+        "msg": {
+            "argmap": ["message", "*"]
+        },
+        "echo": {
+            "defaults": {
+                "uppercase": true
+            },
+            "argmap": ["message"]
+        }
+    }
+}
